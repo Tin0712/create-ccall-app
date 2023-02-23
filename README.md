@@ -1,6 +1,6 @@
-# create-jambonz-app 
+# create-ccall-app 
 
-Usage: npx create-jambonz-app [options] project-name
+Usage: npx create-ccall-app [options] project-name
 ```
 Options:
   -h, --help                        display help for command
@@ -17,9 +17,9 @@ The following scenarios are available:
 **Example**: 
 
 ```bash
-$ npx create-jambonz-app --scenarios 'dial, auth, tts' my-app
+$ npx create-ccall-app --scenarios 'dial, auth, tts' my-app
 
-Creating a new jambonz app in /Users/perpich/test/my-app
+Creating a new ccall app in /Users/perpich/test/my-app
 Installing packages...
 ```
 After that, edit the my-app/ecosystem.config.js file to set necessary environment variables for the webhooks and then start your app
