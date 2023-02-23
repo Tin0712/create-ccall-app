@@ -1,16 +1,16 @@
 {
-  "name": "create-jambonz-app",
+  "name": "create-ccall-app",
   "version": "0.0.6",
-  "description": "Scaffold a jambonz webhook application",
+  "description": "Scaffold a ccall webhook application",
   "main": "bin/index.js",
   "bin": {
     "create-jambonz-app": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/drachtio/create-drachtio-app"
+    "url": "https://github.com/Tin0712/create-ccall-app"
   },
-  "readme": "https://github.com/drachtio/create-drachtio-app/blob/main/README.md",
+  "readme": "https://github.com/Tin0712/create-ccall-app/blob/main/README.md",
   "scripts": {
     "start": "node bin/index.js",
     "jslint": "eslint bin/index.js"
