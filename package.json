@@ -1,5 +1,5 @@
 {
-  "name": "create-ccall-app",
+  "name": "create-epa-app",
   "version": "0.0.6",
   "description": "Scaffold a ccall webhook application",
   "main": "bin/index.js",
