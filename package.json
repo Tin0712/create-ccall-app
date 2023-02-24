@@ -1,6 +1,6 @@
 {
-  "name": "test-publish-app",
-  "version": "0.0.7",
+  "name": "create-epa-app",
+  "version": "0.0.8",
   "description": "Scaffold a epa webhook application",
   "main": "bin/index.js",
   "bin": {
