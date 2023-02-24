@@ -1,16 +1,16 @@
 {
   "name": "create-epa-app",
   "version": "0.0.7",
-  "description": "Scaffold a ccall webhook application",
+  "description": "Scaffold a epa webhook application",
   "main": "bin/index.js",
   "bin": {
     "create-jambonz-app": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Tin0712/create-ccall-app"
+    "url": "https://github.com/Tin0712/create-epa-app"
   },
-  "readme": "https://github.com/Tin0712/create-ccall-app/blob/main/README.md",
+  "readme": "https://github.com/Tin0712/create-epa-app/blob/main/README.md",
   "scripts": {
     "start": "node bin/index.js",
     "jslint": "eslint bin/index.js"
