@@ -1,10 +1,10 @@
 {
-  "name": "create-epa-app",
+  "name": "create-tin-app",
   "version": "0.0.1",
   "description": "Scaffold a epa webhook application",
   "main": "bin/index.js",
   "bin": {
-    "create-epa-app": "./bin/index.js"
+    "create-tin-app": "./bin/index.js"
   },
   "repository": {
     "type": "git",
