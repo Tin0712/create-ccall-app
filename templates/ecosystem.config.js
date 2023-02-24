@@ -18,9 +18,7 @@ module.exports = {
       WEBHOOK_SECRET: '',
       HTTP_PASSWORD: '',
       HTTP_USERNAME: '',
-{% if record %}
-      WS_RECORD_PATH: '',
-{% endif %}
+      WS_RECORD_PATH: ''
     }
   }]
 };

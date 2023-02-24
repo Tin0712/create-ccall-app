@@ -4,7 +4,7 @@
   "description": "Scaffold a epa webhook application",
   "main": "bin/index.js",
   "bin": {
-    "create-jambonz-app": "./bin/index.js"
+    "create-epa-app": "./bin/index.js"
   },
   "repository": {
     "type": "git",
