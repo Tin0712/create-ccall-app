@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const WebhookResponse = require('@jambonz/node-client').WebhookResponse;
+const WebhookResponse = require('tin-node-client').WebhookResponse;
 
 router.post('/', (req, res) => {
   const {logger} = req.app.locals;

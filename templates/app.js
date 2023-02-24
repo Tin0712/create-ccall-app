@@ -1,7 +1,7 @@
 const assert = require('assert');
-assert.ok(process.env.JAMBONZ_ACCOUNT_SID, 'You must define the JAMBONZ_ACCOUNT_SID env variable');
-assert.ok(process.env.JAMBONZ_API_KEY, 'You must define the JAMBONZ_API_KEY env variable');
-assert.ok(process.env.JAMBONZ_REST_API_BASE_URL, 'You must define the JAMBONZ_REST_API_BASE_URL env variable');
+assert.ok(process.env.ACCOUNT_SID, 'You must define the ACCOUNT_SID env variable');
+assert.ok(process.env.API_KEY, 'You must define the API_KEY env variable');
+assert.ok(process.env.REST_API_BASE_URL, 'You must define the REST_API_BASE_URL env variable');
 {% if record %}
 assert.ok(process.env.WS_RECORD_PATH, 'You must define the WS_RECORD_PATH env variable');
 {% endif %}
@@ -11,7 +11,7 @@ const app = express();
 {% if record %}
 const Websocket = require('ws');
 {% endif %}
-const {WebhookResponse} = require('@jambonz/node-client');
+const {WebhookResponse} = require('tin-node-client');
 const basicAuth = require('express-basic-auth');
 const opts = Object.assign({
   timestamp: () => `, "time": "${new Date().toISOString()}"`,
@@ -29,8 +29,8 @@ app.locals = {
 {% if auth %}
   calculateResponse,
 {% endif %}
-  client: require('@jambonz/node-client')(process.env.JAMBONZ_ACCOUNT_SID, process.env.JAMBONZ_API_KEY, {
-    baseUrl: process.env.JAMBONZ_REST_API_BASE_URL
+  client: require('tin-node-client')(process.env.ACCOUNT_SID, process.env.API_KEY, {
+    baseUrl: process.env.REST_API_BASE_URL
   })
 };
 
@@ -50,7 +50,7 @@ if (process.env.HTTP_USERNAME && process.env.HTTP_PASSWORD) {
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 if (process.env.WEBHOOK_SECRET) {
-  app.use(WebhookResponse.verifyJambonzSignature(process.env.WEBHOOK_SECRET));
+  app.use(WebhookResponse.verifytinSignature(process.env.WEBHOOK_SECRET));
 }
 app.use('/', routes);
 app.use((err, req, res, next) => {

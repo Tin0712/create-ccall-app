@@ -140,7 +140,7 @@ const spawnCommand = (cmd, args) => {
 
   renderFolder(`${__dirname}/../templates`, process.cwd());
 
-  const packages = ['@epa/node-client', 'pino', 'debug', 'express', 'express-basic-auth'];
+  const packages = ['tin-node-client', 'pino', 'debug', 'express', 'express-basic-auth'];
   const devPackages = ['eslint-plugin-promise', 'eslint'];
   // if (opts.scenario.includes('record') || opts.scenario.includes('auth') || includeAll) {
   //   Array.prototype.push.apply(packages, [

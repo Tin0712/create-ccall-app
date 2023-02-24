@@ -1,23 +1,24 @@
 const router = require('express').Router();
-const WebhookResponse = require('@jambonz/node-client').WebhookResponse;
+const { WebhookResponse } = require('tin-node-client');
 
 router.post('/', (req, res) => {
-  const {logger} = req.app.locals;
-  logger.debug({payload: req.body}, 'POST /dial-time');
+  const { logger } = req.app.locals;
+  logger.debug({ payload: req.body }, 'POST/goinoibo');
   try {
     const app = new WebhookResponse();
     app.dial({
+      callerId: req.body.from,
       answerOnBridge: true,
       target: [
         {
-          type: 'phone',
-          number: process.env.TEST_OUTDIAL_PHONENUMBER || '13034997111'
+          type: 'user',
+          name: '1001@tin.com'
         }
       ]
     });
     res.status(200).json(app);
   } catch (err) {
-    logger.error({err}, 'Error');
+    logger.error({ err }, 'Error');
     res.sendStatus(503);
   }
 });
