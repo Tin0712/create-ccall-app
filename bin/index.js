@@ -46,7 +46,7 @@ Scenarios available:
 - all: generate all of the above scenarios
 
 Example:
-  $ npx create-jambonz-app my-app`)
+  $ npx create-tin-app my-app`)
   .option('-s, --scenario <scenario>',
     'generates sample webhooks for specified scenarios, default is dial and tts', 'tts, dial');
 

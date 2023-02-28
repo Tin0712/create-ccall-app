@@ -59,7 +59,7 @@ app.use((err, req, res, next) => {
 });
 
 const server = app.listen(port, () => {
-  logger.info(`Example jambonz app listening at http://localhost:${port}`);
+  logger.info(`Example app listening at http://localhost:${port}`);
 });
 {% if record %}
 server.on('upgrade', (request, socket, head) => {
