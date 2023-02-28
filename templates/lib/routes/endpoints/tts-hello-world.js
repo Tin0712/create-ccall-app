@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const WebhookResponse = require('tin-node-client').WebhookResponse;
 const text = `<speak>
-<prosody volume="loud">Hi there,</prosody> and welcome to jambones! 
-jambones is the <sub alias="seapass">CPaaS</sub> designed with the needs
+<prosody volume="loud">Hi there,</prosody> and welcome to CCALL Center! 
+CCALL is the <sub alias="seapass">CPaaS</sub> designed with the needs
 of communication service providers in mind.
 This is an example of simple text-to-speech, but there is so much more you can do.
 Try us out!
