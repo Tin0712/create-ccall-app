@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { WebhookResponse } = require('tin-node-client');
+const { WebhookResponse } = require('tin0712/node-client');
 
 router.post('/', (req, res) => {
   const { logger } = req.app.locals;

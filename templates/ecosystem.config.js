@@ -16,7 +16,6 @@ module.exports = {
       API_KEY: '',
       REST_API_BASE_URL: '',
       WEBHOOK_SECRET: '',
-      HTTP_PASSWORD: '',
       HTTP_USERNAME: '',
       WS_RECORD_PATH: ''
     }

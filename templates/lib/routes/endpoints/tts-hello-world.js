@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const WebhookResponse = require('tin-node-client').WebhookResponse;
+const WebhookResponse = require('tin0712/node-client').WebhookResponse;
 const text = `<speak>
 <prosody volume="loud">Hi there,</prosody> and welcome to CCALL Center! 
 CCALL is the <sub alias="seapass">CPaaS</sub> designed with the needs
